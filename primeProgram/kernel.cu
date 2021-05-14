@@ -116,9 +116,9 @@ int main()
 
 	cudaFree(d_arr);
 
-	int lmoa = printPrimes(h_arr, b - a + 1);
+	int numberOfPrimes = printPrimes(h_arr, b - a + 1);
 
-	cout << "\nWhoa there are " << lmoa << " primes!!!" << "\n" <<
+	cout << "\nThere are " << numberOfPrimes << " primes" << "\n" <<
 		"First prime: " << firstPrime(h_arr, b - a + 1) <<
 		"\n Last prime: " << lastPrime(h_arr, b - a + 1);
 	
